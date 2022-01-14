@@ -1,0 +1,68 @@
+.title
+{
+	text-align: center;
+	font-family:play;
+	font-size: xx-large;
+	color: white;
+	grid-area: title;
+}
+@font-face 
+{
+	font-family: "play";
+	src: url("fonts/Righteous-Regular.ttf")
+}
+#gamecontainer
+{
+	display: grid;
+	grid-template-areas:
+	"title none"
+	"image info";
+}
+#gameinfo
+{
+	display: grid;
+	grid-template-areas:
+	"none"
+	"desc"
+	"footer";
+	font-family: play;
+	align-content: left;
+}
+#social
+{
+	font-family: play;
+	padding-left: 70px;
+}
+#gamedesc
+{
+	grid-area: desc;
+	color: white;
+	font-family: play;
+}
+#gametitle
+{
+	color: white;
+	font-family: play;
+	font-size: xx-large;
+}
+#footer
+{
+	text-align: center;
+}
+#self
+{
+	text-align: center;
+	font-family: play;
+	color: wheat;
+}
+#head
+{
+	display: grid;
+	grid-template-areas: "back title extra";
+}
+#socialheader
+{
+	margin-left: auto;
+	display: inline;
+	grid-area: extra;
+}
