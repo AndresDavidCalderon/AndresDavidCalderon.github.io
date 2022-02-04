@@ -4,7 +4,6 @@
 	font-family:play;
 	font-size: xx-large;
 	color: white;
-	grid-area: title;
 }
 @font-face 
 {
@@ -57,12 +56,11 @@
 }
 #head
 {
-	display: grid;
-	grid-template-areas: "back title extra";
+	position: fixed;
+	width: 100%;
 }
 #socialheader
 {
 	margin-left: auto;
 	display: inline;
-	grid-area: extra;
 }
