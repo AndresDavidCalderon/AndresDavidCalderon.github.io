@@ -21,13 +21,7 @@
 }
 #gameinfo
 {
-	display: grid;
-	grid-template-areas:
-	"none"
-	"desc"
-	"footer";
 	font-family: play;
-	align-content: left;
 }
 #social
 {
@@ -36,7 +30,6 @@
 }
 #gamedesc
 {
-	grid-area: desc;
 	color: white;
 	font-family: play;
 }
@@ -65,4 +58,8 @@
 {
 	margin-left: auto;
 	display: inline;
+}
+#policy
+{
+	float: right;
 }
