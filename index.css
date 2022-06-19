@@ -63,3 +63,8 @@
 {
 	float: right;
 }
+#playbutton
+{
+	float: left;
+	color: chartreuse;
+}
