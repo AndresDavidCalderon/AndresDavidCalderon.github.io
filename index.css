@@ -14,13 +14,12 @@
 }
 #gamecontainer
 {
-	display: grid;
-	grid-template-areas:
-	"title none"
-	"image info";
+	display: flex;
+	flex-wrap: wrap;
 }
 #gameinfo
 {
+	margin: 20px;
 	font-family: play;
 }
 #social
@@ -32,6 +31,7 @@
 {
 	color: white;
 	font-family: play;
+	max-width: 25ch;
 }
 #gametitle
 {
