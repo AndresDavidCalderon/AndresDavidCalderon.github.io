@@ -1,79 +1,33 @@
-.title
-{
-	text-align: center;
-	font-family:play;
-	font-size: xx-large;
-	color: white;
+@font-face {
+	src: url("./fonts/Oswald/Oswald.ttf");
+	font-family: regular;
+	font-weight: 50;
+}
+#page_title{
+	position: relative;
 	width: 100%;
-	height:50px;
-	pointer-events: none;
+	text-align: center;
+	font-family: regular;
+	font-size: 40px;
+}
+.game_title{
 	position: relative;
-	top: 10px;
-	z-index: -1;
+	width: 100%;
+	text-align: center;
+	font-family: regular;
+	font-size: 32px;
 }
-.title_background{
-	z-index: 1;
-	position: relative;
-	bottom: 30px;
-	width: 100vw;
-	background-color: black;
-	height: 7vh;
-}
-@font-face 
-{
-	font-family: "play";
-	src: url("fonts/Righteous-Regular.ttf")
-}
-#gamecontainer
-{
+.game_container{
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
 }
-#gameinfo
-{
-	margin: 20px;
-	font-family: play;
-}
-#social
-{
-	font-family: play;
-	padding-left: 70px;
-}
-#gamedesc
-{
-	color: white;
-	font-family: play;
-	max-width: 25ch;
-}
-#gametitle
-{
-	color: white;
-	font-family: play;
-	font-size: xx-large;
-}
-#self
-{
-	text-align: center;
-	font-family: play;
-	color: wheat;
-}
-#head
-{
-	position: fixed;
-	width: 100%;
-}
-#socialheader
-{
+.game_info{
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	margin-left: auto;
-	display: inline;
+	left: 10px;
 }
-#policy
-{
-	float: right;
-}
-#playbutton
-{
-	float: left;
-	color: chartreuse;
+.text{
+	font-family: regular;
+	font-size: 32px;
 }
