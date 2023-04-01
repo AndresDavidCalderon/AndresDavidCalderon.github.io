@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>David Dev</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css"></link>
-    </head>
-    <body>
-        <h1 id="page_title">Andres David</h1>
-        <h2 class="game_title">Ignis</h2>
-        <div class="game_container">
-            <img src="./newsmall.png">
-            <div class="game_info">
-                <h3 class="text">An adventure game about being a fire ball and interactiong with nature</h3>
-                <a href='https://play.google.com/store/apps/details?id=org.godotengine.ignis&hl=es_419&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-            </div>
+
+<head>
+    <title>David Dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    </link>
+    <link rel="stylesheet" href="./responsive_classes.css">
+    </link>
+</head>
+
+<body>
+    <h1 id="page_title">Andres David</h1>
+    <h2 class="text" style="text-align: center;">A programmer with experience in godot and javascript.</h2>
+    <h1 class="game_title">My apps</h1>
+    <h2 class="game_title">Ignis</h2>
+    <div class="game_container row">
+        <img class="col-5 game_image" src="./ignis logo.png">
+        <div class="game_info col-5">
+            <h3 class="text">An adventure game about being a fire ball and interactiong with nature, made with Godot.</h3>
+            <a target="_blank"
+                href='https://play.google.com/store/apps/details?id=org.godotengine.ignis&hl=es_419&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img class="store_badge" alt='Get it on Google Play'
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+            </a>
+            <h3 class="text"> Also avaliable on </h3>
+            <a href="https://void-games-david.itch.io/ignis">
+                <img class="store_badge_small" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
+            </a>
+            <a target="_blank" href="https://github.com/AndresDavidCalderon/ignis">
+                <img class="store_badge_small_fill" src="./brands/GitHub_Logo_White.png">
+            </a>
         </div>
-    </body>
+    </div>
+
+    <h2 class="game_title">Smart notes</h2>
+
+    <div class="game_container row">
+        <img src="./smart_notes_screenshot.png" class="col-5 game_image">
+        <div class="game_info col-5">
+            <h3 class="text">An open source note taking app, made with react and electron.</h3>
+            <a target="_blank" href="https://github.com/AndresDavidCalderon/smart_notes">
+                <img class="store_badge_small_fill" src="./brands/GitHub_Logo_White.png">
+            </a>
+        </div>
+    </div>
+    <h2 class="game_title"> Prototypes </h2>
+    <h2 class="game_title">Pixel liquid toy</h2>
+    <div class="game_container row">
+        <img src="./toy.png" class="game_image col-5">
+        <div class="game_info col-5">
+            <h3 class="text">A liquid simulation made in godot</h3>
+            <a target="_blank" href="https://void-games-david.itch.io/pixel-liquid-toy">
+                <img class="store_badge" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
+            </a>
+        </div>
+    </div>
+    <h2 class="game_title">Randamatch</h2>
+    <div class="game_container row">
+        <img src="./randamatch.png" class="game_image col-5">
+        <div class="game_info col-5">
+            <h3 class="text">A prototype for 3d procedural generation in godot.</h3>
+            <a target="_blank" href="https://void-games-david.itch.io/randamatch">
+                <img class="store_badge" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
+            </a>
+        </div>
+    </div>
+    
+
+</body>
+
 </html>
