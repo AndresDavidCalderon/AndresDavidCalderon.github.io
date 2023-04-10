@@ -6,7 +6,6 @@
     <meta charset=“UTF-8”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./index.css">
-    </link>
     <link rel="stylesheet" type="text/css" href="./responsive_classes.css">
     </link>
 </head>
@@ -17,60 +16,83 @@
     <h1 class="game_title">My apps</h1>
     <h2 class="game_title">Ignis</h2>
     <div class="game_container row">
-        <img class="col-5 game_image" src="./ignis logo.png">
+        <img class="col-5 game_image" src="./ignis logo.png" alt="ignis logo">
         <div class="game_info col-5">
-            <h3 class="text">An adventure game about being a fire ball and interactiong with nature, made with Godot.</h3>
+            <h3 class="text">An adventure game about being a fire ball and interactiong with nature.</h3>
             <a class="text" href="./web_apps/ignis_web/ignis.html">Play web version</a>
-            <a target="_blank"
-                href='https://play.google.com/store/apps/details?id=org.godotengine.ignis&hl=es_419&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                <img class="store_badge" alt='Get it on Google Play'
-                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
-            </a>
-            <h3 class="text"> Also avaliable on </h3>
-            <a href="https://void-games-david.itch.io/ignis">
-                <img class="store_badge_small" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
-            </a>
-            <a target="_blank" href="https://github.com/AndresDavidCalderon/ignis">
-                <img class="store_badge_small_fill" src="./brands/GitHub_Logo_White.png">
-            </a>
+
+            <div class="store_list">
+                <a target="_blank"
+                    href='https://play.google.com/store/apps/details?id=org.godotengine.ignis&hl=es_419&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img class="store_icon" alt='Get it on Google Play'
+                        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+                </a>
+                <a href="https://void-games-david.itch.io/ignis">
+                    <img class="store_icon" src="./brands/itchio_icon.svg" alt="avaliable in itch.io">
+                </a>
+                <a target="_blank" href="https://github.com/AndresDavidCalderon/ignis">
+                    <img alt="see source on github" class="store_icon" src="./brands/github-mark.svg">
+                </a>
+            </div>
+
+            <div class="tech_stack">
+                <img alt="godot" src="./brands/godot.svg" class="tech_logo">
+                <img alt="aseprite" src="./brands/aseprite.png" class="tech_logo">
+            </div>
         </div>
     </div>
 
     <h2 class="game_title">Smart notes</h2>
 
     <div class="game_container row">
-        <img src="./smart_notes_screenshot.png" class="col-5 game_image">
+        <img src="./smart_notes_screenshot.png" class="col-5 game_image" alt="smart notes home screen">
         <div class="game_info col-5">
-            <h3 class="text">An open source note taking app, made with react and electron.</h3>
+            <h3 class="text">An open source note taking app.</h3>
             <a class="text" href="./web_apps/smart_notes/index.html">Use web version</a>
-            <a target="_blank" href="https://github.com/AndresDavidCalderon/smart_notes">
-                <img class="store_badge_small_fill" src="./brands/GitHub_Logo_White.png">
-            </a>
+            <div class="tech_stack">
+                <img alt="electron" class="tech_logo" src="./brands/electron.svg">
+                <img alt="react" class="tech_logo" src="./brands/react.svg">
+            </div>
+            <div class="store_list">
+                <a target="_blank" href="https://github.com/AndresDavidCalderon/smart_notes">
+                    <img alt="see source on github" class="store_icon" src="./brands/github-mark.svg">
+                </a>
+            </div>
         </div>
     </div>
     <h2 class="game_title"> Prototypes </h2>
     <h2 class="game_title">Pixel liquid toy</h2>
     <div class="game_container row">
-        <img src="./toy.png" class="game_image col-5">
+        <img src="./toy.png" class="game_image col-5" alt="pixel liquid toy logo">
         <div class="game_info col-5">
             <h3 class="text">A liquid simulation made in godot</h3>
-            <a target="_blank" href="https://void-games-david.itch.io/pixel-liquid-toy">
-                <img class="store_badge" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
-            </a>
+            <div class="store_list">
+                <a target="_blank" href="https://void-games-david.itch.io/pixel-liquid-toy">
+                    <img class="store_icon" src="./brands/itchio_icon.svg" alt="avaliable in itch.io">
+                </a>
+            </div>
+            <div class="tech_stack">
+                <img alt="godot" src="./brands/godot.svg" class="tech_logo">
+            </div>
+
         </div>
     </div>
     <h2 class="game_title">Randamatch</h2>
     <div class="game_container row">
-        <img src="./randamatch.png" class="game_image col-5">
+        <img src="./randamatch.png" class="game_image col-5" alt="randamatch screenshot">
         <div class="game_info col-5">
-            <h3 class="text">A prototype for 3d procedural generation in godot.</h3> 
-            <a target="_blank" href="https://void-games-david.itch.io/randamatch">
-                <img class="store_badge" src="./brands/itchio badge.svg" alt="avaliable in itch.io">
-            </a>
+            <h3 class="text">A prototype for 3d procedural generation in godot.</h3>
+            <div class="store_list">
+                <a target="_blank" href="https://void-games-david.itch.io/randamatch">
+                    <img class="store_icon" src="./brands/itchio_icon.svg" alt="avaliable in itch.io">
+                </a>
+            </div>
+            <div class="tech_stack">
+                <img alt="godot" src="./brands/godot.svg" class="tech_logo">
+                <img alt="blender" src="./brands/blender_icon_64x64.png" class="tech_logo">
+            </div>
         </div>
     </div>
-    
-
 </body>
 
 </html>

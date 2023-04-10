@@ -10,6 +10,9 @@
 	font-family: regular;
 	font-size: 40px;
 }
+.game_container{
+	position: relative;
+}
 .game_title{
 	position: relative;
 	width: 100%;
@@ -18,34 +21,43 @@
 	font-size: 40px;
 }
 .game_info{
+	height: 400px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: 10px;
 }
 .text{
 	font-family: regular;
 	font-size: 32px;
 }
-.game_image{
-	height: auto; 
-}
 
-.store_badge{
+.store_list{
+	position: absolute;
 	width: 30%;
-	height: auto;
+	top: calc(100% - 64px);
+	display: flex;
+	height: 64px;
+}
+.store_icon{
+	height: 64px;
+	width: auto;
 }
 
-.store_badge_small{
-	width: 20%;
-	height: auto;
+
+.tech_stack{
+	display: flex;
+	flex-direction: row-reverse;
+	width: 40%;
+	height: 56px;
+	position: absolute;
+	left:50%;
+	top: calc(100% - 48px);
+	object-fit: contain;
 }
 
-.store_badge_small_fill{
-	width: 20%;
+.tech_logo{
+	width: 40px;
 	height: auto;
-	background-color: black;
-	border-radius: 10px;
+	filter: grayscale(100%);
+	margin: 8px;
 }
-
-.play_online
