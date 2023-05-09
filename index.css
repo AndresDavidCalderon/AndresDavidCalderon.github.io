@@ -61,3 +61,7 @@
 	filter: grayscale(100%);
 	margin: 8px;
 }
+
+.paragraph{
+	white-space: pre-wrap;
+}
