@@ -30,6 +30,9 @@
 	font-family: regular;
 	font-size: 32px;
 }
+.paragraph{
+	white-space: pre-wrap;
+}
 
 .store_list{
 	position: absolute;
@@ -60,8 +63,4 @@
 	height: auto;
 	filter: grayscale(100%);
 	margin: 8px;
-}
-
-.paragraph{
-	white-space: pre-wrap;
 }
