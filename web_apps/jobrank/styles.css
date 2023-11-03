@@ -1,0 +1,116 @@
+@font-face {
+    font-family: gabarito;
+    src: url(./gabarito_font.ttf);
+}
+
+*{
+    font-family: gabarito;
+    font-size: 4vmin;
+}
+
+footer{
+    font-size: 2.5vmin;
+}
+
+.logo{
+    position: relative;
+    width: 25vmin;
+}
+
+#header_navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.header_link{
+    color: black;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+#header_background{
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 4px solid black;
+    text-align: center;
+}
+
+.social_container{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+}
+
+.social_logo{
+    height: 5vh;
+}
+.title{
+    position: relative;
+    color:blue;
+    font-size: 32px;
+    width: 50vw;
+    left: 25vw;
+    text-align: center;
+}
+
+.showcase_image{
+    width: 25%;
+}
+
+.section_container{
+    display: flex;
+    width: 90vw;
+}
+
+.section_right{
+    left: 10vw;
+    justify-content: flex-end;
+}
+
+#session_buttons{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    justify-content: space-around;
+    display: flex;
+}
+
+.session_button{
+    font-size: 3vmin;
+}
+
+
+#slogan{
+    margin-top: 20vmin;
+    position: relative;
+    text-align: center;
+    width: 90vw;
+    left:5vw
+}
+
+#session_form{
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.whole_name_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+input{
+    margin: 10px;
+}
