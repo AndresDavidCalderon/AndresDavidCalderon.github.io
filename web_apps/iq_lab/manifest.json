@@ -11,7 +11,7 @@
   "theme_color": "#97db45",
   "categories": [],
   "screenshots": [{
-    "src":"/screenshots/wide_test.png",
+    "src":"screenshots/wide_test.png",
     "form_factor":"wide",
     "sizes":"1920x996"
   },
