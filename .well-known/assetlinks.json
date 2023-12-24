@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target":{
+    "namespace":"android_app",
+    "package_name":"io.andresdavidcalderon.github.iq",
+    "sha256_cert_fingerprints":[
+      "79:D6:73:6C:AD:BA:31:CA:01:FB:7A:81:39:B3:22:3F:E3:7F:7E:98:47:F3:78:35:3B:D8:EF:45:46:11:CF:45"
+    ]
+  }
+}]
