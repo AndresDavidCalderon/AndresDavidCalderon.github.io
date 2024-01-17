@@ -4,7 +4,8 @@
     "namespace": "android_app",
     "package_name": "io.andresdavidcalderon.github.iq",
     "sha256_cert_fingerprints": [
+      "E2:AD:2A:A8:4A:1D:6F:92:D2:27:09:04:F9:0C:04:82:8C:35:72:B7:EA:37:4A:6C:EA:BC:B1:0A:5E:E7:62:CC",
       "79:D6:73:6C:AD:BA:31:CA:01:FB:7A:81:39:B3:22:3F:E3:7F:7E:98:47:F3:78:35:3B:D8:EF:45:46:11:CF:45"
     ]
   }
- }]
+}]
