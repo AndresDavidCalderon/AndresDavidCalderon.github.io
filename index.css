@@ -3,7 +3,8 @@
 	font-family: regular;
 	font-weight: 50;
 }
-html{
+*{
+	font-family: regular;
 }
 body{
 	margin: 0;
