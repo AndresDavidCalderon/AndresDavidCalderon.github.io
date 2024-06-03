@@ -5,58 +5,131 @@
 }
 *{
 	font-family: regular;
+	--primary-logo-hovered-color:#5bbe76;
+	--primary-logo-color:#6ee78eff;
+	--secondary-logo-color:#61b0acff;
+	--secondary-logo-hovered-color:rgb(75, 130, 127);
+	--ignis-color:rgb(94, 101, 221);
+	--ignis-color-hovered:rgb(35, 35, 166);
+	--button-shadow-color: silver; 
 }
+button{
+	border: 0;
+	box-shadow: 5px 5px 5px var(--button-shadow-color);
+}
+
 body{
 	margin: 0;
 }
-#title_background{
-	top: 0;
-	display:inline-block;
-	position: fixed;
+
+.contact_button_container{
+	display: flex;
 	width: 100%;
-	height: 70px;
-	background-color: black;
-	z-index: 1;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.header_link{
-	position: relative;
-	z-index: 2;
-}
-
-.header_logo{
-	height: 50px;
-	margin: 10px;
-
-}
-
-#page_title{
-	z-index: 2;
+.contact_button{
+	width: 80vw;
+	font-size: 10vw;
 	margin: 4px;
+}
+
+.hire_button{
+	background-color: var(--primary-logo-color);
+}
+
+.mail_button{
+	background-color: var(--secondary-logo-color);
+}
+
+.source_button{
+	margin-top: 10px;
+	background-color:var(--secondary-logo-color);
+	width: 100%;
+	font-size: 30px;
+}
+
+.source_button:hover{
+
+	background-color:var(--secondary-logo-hovered-color);
+}
+
+.ignis_source{
+	font-family: ignis;
+}
+
+.hire_button:hover{
+	background-color: var(--primary-logo-hovered-color);
+}
+
+.store_title{
+	font-size: 32px;
+}
+
+
+@font-face {
+	src: url("./fonts/ignis/fivefontsatreddit.ttf");
+	font-family: ignis;
+	font-weight: 20;
+}
+
+.ignis_container{
+	background-color: black;
 	color: white;
-	position: relative;
-	left: 25%;
-	width: 50%;
-	text-align: center;
-	font-family: regular;
-	font-size: 40px;
+	font-family: ignis;
 }
-.game_container{
-	position: relative;
-}
+
 .game_title{
 	position: relative;
 	width: 100%;
 	text-align: center;
-	font-family: regular;
-	font-size: 40px;
+	font-size: 60px;
+	margin: 0;
 }
+
+.game_image{
+	width: 100%;
+}
+
+.ignis_title{
+	font-family: ignis;
+	font-weight: 100;
+}
+
 .game_info{
-	height: 400px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
+
+.ignis_info{
+	font-family: ignis;
+	font-size: 30px;
+}
+
+.play_button{
+	font-size: 30px;
+	box-shadow: 5px 5px 5px dimgray;
+	background-color: var(--primary-logo-color);
+}
+
+.play_button:hover{
+	background-color: var(--primary-logo-hovered-color);
+}
+
+.ignis_play{
+	background-color: var(--ignis-color);
+	font-family: ignis;
+}
+
+
+.ignis_play:hover{
+	background-color: var(--ignis-color-hovered);
+}
+
 .text{
 	font-family: regular;
 	font-size: 32px;
@@ -66,32 +139,61 @@ body{
 }
 
 .store_list{
-	position: absolute;
-	width: 30%;
-	top: calc(100% - 64px);
 	display: flex;
-	height: 64px;
-}
-.store_icon{
-	height: 64px;
-	width: auto;
 }
 
+
+.store_icon{
+	height: 48px;
+	width: auto;
+	margin: 10px;
+}
+
+.image_container{
+	position: relative;
+}
 
 .tech_stack{
-	display: flex;
-	flex-direction: row-reverse;
-	width: 40%;
-	height: 56px;
 	position: absolute;
-	left:50%;
-	top: calc(100% - 48px);
-	object-fit: contain;
+	bottom: 30px;
+	left: 30px;
 }
 
 .tech_logo{
 	width: 40px;
 	height: auto;
 	filter: grayscale(100%);
-	margin: 8px;
+	margin: 4px;
+}
+
+.liquid_toy_container{
+	background-color: #e37979;
+}
+
+.toy_download{
+	background-color: #4c4c4c;
+	color: white;
+}
+
+.toy_download:hover{
+	background-color: black;
+}
+
+.randamatch_container{
+	background-color: #67b13d;
+}
+
+.randamatch_download{
+	background-color: white;
+}
+
+.randamatch_download:hover{
+	background-color: gainsboro;
+}
+
+@media only screen and (min-width: 1080px){
+	.contact_button{
+		font-size: 45px;	
+	}
+
 }
