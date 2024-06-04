@@ -150,12 +150,20 @@ h3{
 
 .store_list{
 	display: flex;
+	width: 100%;
 }
 
 
 .store_icon{
-	height: 48px;
-	width: auto;
+	width:100%;
+	max-width: 30vw;
+	height: auto;
+}
+
+.store_link{
+	display: block;
+	position: relative;
+	width:40%;
 	margin: 10px;
 }
 

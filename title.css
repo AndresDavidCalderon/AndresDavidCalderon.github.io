@@ -12,7 +12,7 @@
 
 #page_title{
 	z-index: 2;
-	margin: 4px;
+	margin: 0px;
 	color: var(--primary-logo-color);
 	position: relative;
 	left: 0;
