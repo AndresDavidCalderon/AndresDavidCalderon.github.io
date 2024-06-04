@@ -1,3 +1,4 @@
+
 @font-face {
 	src: url("./fonts/Oswald/Oswald.ttf");
 	font-family: regular;
@@ -20,6 +21,7 @@ button{
 
 body{
 	margin: 0;
+	width: 100%;
 }
 
 .contact_button_container{
@@ -37,12 +39,24 @@ body{
 	margin: 4px;
 }
 
+.color_wrap{
+	width: 100%;
+}
+
 .hire_button{
 	background-color: var(--primary-logo-color);
 }
+.hire_button:hover{
+	background-color: var(--primary-logo-hovered-color);
+}
+
 
 .mail_button{
 	background-color: var(--secondary-logo-color);
+}
+
+.mail_button:hover{
+	background-color: var(--secondary-logo-hovered-color);
 }
 
 .source_button{
@@ -59,10 +73,6 @@ body{
 
 .ignis_source{
 	font-family: ignis;
-}
-
-.hire_button:hover{
-	background-color: var(--primary-logo-hovered-color);
 }
 
 .store_title{
@@ -130,7 +140,7 @@ body{
 	background-color: var(--ignis-color-hovered);
 }
 
-.text{
+h3{
 	font-family: regular;
 	font-size: 32px;
 }
@@ -190,6 +200,7 @@ body{
 .randamatch_download:hover{
 	background-color: gainsboro;
 }
+
 
 @media only screen and (min-width: 1080px){
 	.contact_button{

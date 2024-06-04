@@ -32,3 +32,7 @@ document.getElementById("ignis_play").addEventListener("click",()=>{
 document.getElementById("ignis_source").addEventListener("click",()=>{
     window.open("https://github.com/AndresDavidCalderon/ignis")
 })
+
+document.getElementById("launch_iq").addEventListener("click",()=>{
+    window.open("https://andresdavidcalderon.github.io/web_apps/iq_lab/")
+})

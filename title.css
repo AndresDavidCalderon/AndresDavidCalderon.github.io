@@ -15,8 +15,8 @@
 	margin: 4px;
 	color: var(--primary-logo-color);
 	position: relative;
-	left: 25%;
-	width: 50%;
+	left: 0;
+	width: 100%;
 	text-align: center;
 	font-family: regular;
 	font-size: 40px;
