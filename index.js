@@ -36,3 +36,10 @@ document.getElementById("ignis_source").addEventListener("click",()=>{
 document.getElementById("launch_iq").addEventListener("click",()=>{
     window.open("https://andresdavidcalderon.github.io/web_apps/iq_lab/")
 })
+document.getElementById("iq_source").addEventListener("click",()=>{
+    window.open("https://github.com/AndresDavidCalderon/iq-lab")
+})
+
+document.getElementById("randamatch_source").addEventListener("click",()=>{
+    window.open("https://github.com/AndresDavidCalderon/randamatchgit")
+})
