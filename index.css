@@ -12,11 +12,13 @@
 	--secondary-logo-hovered-color:rgb(75, 130, 127);
 	--ignis-color:rgb(94, 101, 221);
 	--ignis-color-hovered:rgb(35, 35, 166);
-	--button-shadow-color: silver; 
 }
 button{
 	border: 0;
-	box-shadow: 5px 5px 5px var(--button-shadow-color);
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	font-weight: 300;
 }
 
 body{
@@ -43,13 +45,6 @@ body{
 	width: 100%;
 }
 
-.hire_button{
-	background-color: var(--primary-logo-color);
-}
-.hire_button:hover{
-	background-color: var(--primary-logo-hovered-color);
-}
-
 
 .mail_button{
 	background-color: var(--secondary-logo-color);
@@ -62,7 +57,7 @@ body{
 .source_button{
 	margin-top: 10px;
 	background-color:var(--secondary-logo-color);
-	width: 100%;
+	width: 20%;
 	font-size: 30px;
 }
 
@@ -122,7 +117,6 @@ body{
 
 .play_button{
 	font-size: 30px;
-	box-shadow: 5px 5px 5px dimgray;
 	background-color: var(--primary-logo-color);
 }
 
@@ -211,7 +205,6 @@ h3{
 
 #randamatch_source{
 	background-color: lightgray;
-	box-shadow: 4px 4px 4px 4px #1c4d27;
 }
 
 @media only screen and (min-width: 1080px){
