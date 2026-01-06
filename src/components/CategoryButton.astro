@@ -1,0 +1,30 @@
+---
+const {title,goto} = Astro.props
+---
+
+<a href={goto}>
+    <div class="category_title">
+        {title}
+    </div>
+    <div class="category_underline"></div>
+</a>
+<style>
+    a{
+        margin:0;
+        text-decoration: none;
+    }
+    .category_title{
+        width:100;
+        text-align: center;
+        color: #b5b5b5ff;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .category_underline{
+        width: 100%;
+        background-color: var(--main-accent-color);
+        border-radius: 4px;
+        height: 4px;
+        margin:0;
+    }
+</style>

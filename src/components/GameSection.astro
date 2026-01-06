@@ -1,0 +1,52 @@
+---
+import Game from "../components/Game.vue";
+import GetItOnPlay from "./GetItOnPlay.vue";
+---
+<Game
+    image="/showcase_images/cat_on_a_ball_bearing_car.png"
+    accent="#fff300ff"
+    playURL="/web_apps/cat_on_a_ball_bearing_car/index.html"
+    titleURL="/showcase_images/cat_on_a_ball_bearing_car_title.png"
+    focusedImage="/showcase_images/play_cat_on_car.gif"
+    titleHeight="30%"
+    buttonClass="cat_ball_button"
+    client:load
+/>
+
+<div class="project_interaction_container">
+    <button
+        class="cat_ball_button main_button interaction_button"
+        id="cat_shiba_button"
+        >See game jam page</button
+    >
+    <button class="cat_ball_button interaction_button"
+    id="cat_source_button"
+        >See source</button
+    >
+</div>
+<Game
+    image="/showcase_images/ignis_cave.png"
+    client:load	
+    playURL="/web_apps/ignis/index.html"
+    titleURL="/showcase_images/ignis_logo.png"
+    buttonClass="ignis_button"
+    accent="#0663f0ff"
+/>
+<div class="project_interaction_container">
+    <GetItOnPlay url="https://play.google.com/store/apps/details?id=org.andresdavidcalderon.ignis&hl=en" />
+</div>
+
+<script>
+	document.getElementById("cat_shiba_button")!.onclick = function () {
+		window.open(
+			"https://shiba.hackclub.com/games/U09D3DS9LTX/Cat%20on%20a%20ball%20bearing%20car",
+			"_blank"
+		 );
+	};
+	document.getElementById("cat_source_button")!.onclick = function () {
+		window.open(
+			"https://github.com/AndresDavidCalderon/cat-on-a-ball-bearing-car",
+			"_blank"
+		);
+	};
+</script>

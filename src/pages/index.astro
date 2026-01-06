@@ -1,0 +1,80 @@
+---
+import "@styles/index.css";
+import GameSection from "@components/GameSection.astro";
+import CategoryButton from "@components/CategoryButton.astro";
+import ProjectSection from "@components/ProjectSection.vue";
+import GetInTouch from "@components/GetInTouch.astro";
+---
+
+<html lang="en">
+	<script
+		is:inline
+		src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"
+	></script>
+
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+
+	<!-- Google fonts-->
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+		rel="stylesheet"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+		rel="stylesheet"
+	/>
+	<title>David Develops</title>
+
+	<body>
+		<div class="top_gradient"></div>
+		<div class="main_flex">
+			<div>
+				<p style="text-align: left;">I'm David</p>
+				<h1>Web & game developer</h1>
+			</div>
+			<div class="rating_container">
+				{Array(5).fill(<img class="star" src="/icons/star.svg" />)}
+				<div>on fiverr</div>
+			</div>
+			<p>
+				I help individuals and small teams turn their ideas into
+				functional, polished products.
+			</p>
+			<img src="/collaboration.svg" class="concept_image" />
+			<div class="text_container">
+				<div>
+					<span class="inlinep">I offer</span><span
+						class="inlinep pop">development services</span
+					>
+				</div>
+				<div>
+					<span class="inlinep">and</span><span class="inlinep pop"
+						>one on one classes</span
+					>
+				</div>
+			</div>
+			<img src="/teaching.png" class="concept_image" />
+			<h1>What I have done</h1>
+			<nav class="category_button_holder">
+				<CategoryButton title="Games" goto="#games" />
+				<CategoryButton title="Apps" goto="#apps" />
+				<CategoryButton title="Prototypes" goto="#prototypes" />
+			</nav>
+			<section id="games">
+				<GameSection></GameSection>
+			</section>
+			<ProjectSection client:load></ProjectSection>
+			<GetInTouch />
+		</div>
+	</body>
+</html>
