@@ -72,7 +72,7 @@ const open_link = (url) => {
             </button>
         </Project>
         <Project client:load
-            :images="['/showcase_images/exploragrafos_orange.png']"
+            :images="['/showcase_images/exploragrafos_highres.png']"
             accent="#ffffffa0"
             button_class="exploragrafos_button"
             title="Exploragrafos"

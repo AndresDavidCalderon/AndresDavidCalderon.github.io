@@ -38,7 +38,7 @@ export const ui={
         'top.fiverr':'en fiverr',
         'top.offer':'Ofrezco',
         'top.devservices':'servicios de desarrollo',
-        'top.classes':'clases uno a uno',
+        'top.classes':'clases personalizadas',
         'and':'y',
         'contents.foliotitle':'Lo que he hecho',
         'contents.games': 'Juegos',
