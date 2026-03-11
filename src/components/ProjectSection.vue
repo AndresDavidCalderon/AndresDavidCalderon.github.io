@@ -12,7 +12,7 @@ const open_link = (url) => {
 <template>
     <section id="apps">
         <Project client:load
-            :images="['/showcase_images/iq_lab_start.png']"
+            :images="['/showcase_images/iq_lab_highres.png']"
             accent="#97db45a0"
             button_class="iq_lab_button"
             title="IQ Lab"
@@ -58,7 +58,7 @@ const open_link = (url) => {
     </section>
     <section id="prototypes">
         <Project client:load
-            :images="['/showcase_images/pixel_liquid_toy.png']"
+            :images="['/showcase_images/pixel_liquid_highres.png']"
             accent="#e37979a0"
             button_class="pixel_liquid_button"
             title="Pixel liquid toy"
@@ -83,7 +83,7 @@ const open_link = (url) => {
             <GetItOnPlay url="https://play.google.com/store/apps/details?id=exploragrafos.andresdavidcalderon.dev"></GetItOnPlay>
         </Project>
         <Project client:load
-            :images="['/showcase_images/randamatch.png']"
+            :images="['/showcase_images/randamatch_highres.png']"
             accent="#30541cff"
             button_class="randamatch_button"
             title="Randamatch"
