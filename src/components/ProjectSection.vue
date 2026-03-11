@@ -16,7 +16,7 @@ const open_link = (url) => {
             accent="#97db45a0"
             button_class="iq_lab_button"
             title="IQ Lab"
-            description="An app to develop your abstract reasoning skills"
+            :description="getUI('contents.iqlab.desc')"
             run_url="/web_apps/iq_lab/index.html"
             iframe_width="80vw"
             iframe_height="80vh"
@@ -31,7 +31,7 @@ const open_link = (url) => {
             accent="#ffc300ff"
             button_class="smart_notes_button"
             title="Smart notes"
-            description="A notes app with support for formatting and images"
+            :description="getUI('contents.smartnotes.desc')"
             run_url="/web_apps/smart_notes/index.html"
         >
             <button class="smart_notes_button interaction_button" @click="open_link('/web_apps/smart_notes_index.html')"
@@ -48,7 +48,7 @@ const open_link = (url) => {
             :images="['/showcase_images/integral_formulas_tan.png']"
             accent="#455eb0ff"
             title="Integral formulas"
-            description="A watchface that helps you study for calculus, avalible for wear OS, formerly android wear."
+            :description="getUI('contents.integralformulas.desc')"
             image_width="50%"
         >
             <div class="project_interaction_container">
@@ -62,7 +62,7 @@ const open_link = (url) => {
             accent="#e37979a0"
             button_class="pixel_liquid_button"
             title="Pixel liquid toy"
-            description="Liquid simulation with solute"
+            :description="getUI('contents.pixelliquid.desc')"
             title_class="pixel_liquid_title"
             run_url="/web_apps/pixel_liquid/index.html"
             iframe_height="50vw"
@@ -76,7 +76,7 @@ const open_link = (url) => {
             accent="#ffffffa0"
             button_class="exploragrafos_button"
             title="Exploragrafos"
-            description="A tool for showing properties of undirected graphs"
+            :description="getUI('contents.exploragrafos.desc')"
             run_url="/web_apps/exploragrafos/index.html"
             iframe_height="50vw"
         >
@@ -87,7 +87,7 @@ const open_link = (url) => {
             accent="#30541cff"
             button_class="randamatch_button"
             title="Randamatch"
-            description="A prototype for chunk-based 3D procedural generation."
+            :description="getUI('contents.randamatch.desc')"
         >
             <button class="randamatch_button interaction_button" @click="open_link('https://andres-dev.itch.io/randamatch')">
                 {{ getUI('contents.itch') }}

@@ -55,6 +55,15 @@ button{
     margin: 0;
 }
 
+.inlinep{
+  margin:0;
+  margin-left: 3px;
+}
+
+.textline{
+  margin:0;
+}
+
 .star{
   margin:1px;
 }
