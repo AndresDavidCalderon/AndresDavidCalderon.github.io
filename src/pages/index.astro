@@ -4,6 +4,7 @@ import GameSection from "@components/GameSection.astro";
 import CategoryButton from "@components/CategoryButton.astro";
 import ProjectSection from "@components/ProjectSection.vue";
 import GetInTouch from "@components/GetInTouch.astro";
+
 ---
 
 <html lang="en">
@@ -39,32 +40,35 @@ import GetInTouch from "@components/GetInTouch.astro";
 		<div class="top_gradient"></div>
 		<div class="main_flex">
 			<div>
-				<p style="text-align: left;" class="top_name">I'm David</p>
-				<h1>Web & game developer</h1>
+				<p style="text-align: left;" class="top_name text.top.name">I'm David</p>
+				<h1 class="text.top.profession">Web & game developer</h1>
 			</div>
 			<div class="rating_container">
 				{Array(5).fill(<img class="star" src="/icons/star.svg" />)}
-				<div>on fiverr</div>
+				<div class="text.top.fiverr">on fiverr</div>
 			</div>
-			<p>
+			<p class="text.top.description">
 				I help individuals and small teams turn their ideas into
 				functional, polished products.
 			</p>
 			<img src="/collaboration.svg" class="concept_image" />
 			<div class="text_container">
 				<div>
-					<span class="inlinep">I offer</span><span
-						class="inlinep pop">development services</span
+					<span class="inlinep text.top.offer">I offer</span><span
+						class="inlinep pop text.top.devservices"
 					>
+						development services
+					</span>
 				</div>
 				<div>
-					<span class="inlinep">and</span><span class="inlinep pop"
-						>one on one classes</span
+					<span class="inlinep text.and">and</span><span class="inlinep pop text.top.classes"
 					>
+						one on one classes
+					</span>
 				</div>
 			</div>
 			<img src="/teaching.png" class="concept_image" />
-			<h1>What I have done</h1>
+			<h1 class="text.contents.foliotitle">What I have done</h1>
 			<nav class="category_button_holder">
 				<CategoryButton title="Games" goto="#games" />
 				<CategoryButton title="Apps" goto="#apps" />
@@ -78,3 +82,4 @@ import GetInTouch from "@components/GetInTouch.astro";
 		</div>
 	</body>
 </html>
+<script src="../translator.js"></script>

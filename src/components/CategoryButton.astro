@@ -3,7 +3,7 @@ const {title,goto} = Astro.props
 ---
 
 <a href={goto}>
-    <div class="category_title">
+    <div class={`category_title text.contents.${title.toLowerCase()}`}>
         {title}
     </div>
     <div class="category_underline"></div>
@@ -28,3 +28,5 @@ const {title,goto} = Astro.props
         margin:0;
     }
 </style>
+
+<script src="../translator.js"></script>

@@ -1,6 +1,7 @@
 <script setup>
 import Project from './Project.vue';
 import GetItOnPlay from './GetItOnPlay.vue';
+import { getUI } from '../language.js';
 
 const open_link = (url) => {
     window.open(url, '_blank');
@@ -21,7 +22,7 @@ const open_link = (url) => {
             iframe_height="80vh"
         >
                 <button class="iq_lab_button interaction_button" id="iq_web_button" @click="open_link('/web_apps/iq_lab/index.html')"
-                    >See website</button
+                    >{{ getUI('contents.website') }}</button
                 >
                 <GetItOnPlay url="https://play.google.com/store/apps/details?id=io.andresdavidcalderon.github.iq&hl=en" />
         </Project>
@@ -34,13 +35,13 @@ const open_link = (url) => {
             run_url="/web_apps/smart_notes/index.html"
         >
             <button class="smart_notes_button interaction_button" @click="open_link('/web_apps/smart_notes_index.html')"
-                >See website</button
+                >{{ getUI('contents.website') }}</button
             >
             <button class="smart_notes_button interaction_button" @click="open_link('https://github.com/AndresDavidCalderon/smart_notes')"
-                >Source code</button
+                >{{ getUI('contents.source') }}</button
             >
             <button class="smart_notes_button interaction_button" @click="open_link('https://github.com/AndresDavidCalderon/smart_notes/releases/tag/Linux_only')"
-                >Get for desktop</button
+                >{{ getUI('contents.desktop') }}</button
             >
         </Project>
         <Project client:load
@@ -67,7 +68,7 @@ const open_link = (url) => {
             iframe_height="50vw"
         >
             <button class="pixel_liquid_button interaction_button" @click="open_link('https://andres-dev.itch.io/pixel-liquid-toy')">
-                See on itch.io
+                {{ getUI('contents.itch') }}
             </button>
         </Project>
         <Project client:load
@@ -89,7 +90,7 @@ const open_link = (url) => {
             description="A prototype for chunk-based 3D procedural generation."
         >
             <button class="randamatch_button interaction_button" @click="open_link('https://andres-dev.itch.io/randamatch')">
-                Get it on Itch.io
+                {{ getUI('contents.itch') }}
             </button>
         </Project>
     </section>

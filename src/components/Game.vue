@@ -1,6 +1,7 @@
 <script setup>
     import { ref,computed } from "vue"
     import InPagePlayer from "./InPagePlayer.vue";
+    import { getUI } from "../language.js";
     const props=defineProps({
         image: String,
         accent: String,
@@ -34,7 +35,7 @@
         </div>
         <h1 class="play_button" @click="playing=true">
             <div class="accent_glow"></div>
-            <span class="play_text">Play</span>
+            <span class="play_text">{{ getUI('contents.play') }}</span>
         </h1>
     </div>
     <div v-else class="game_container">
