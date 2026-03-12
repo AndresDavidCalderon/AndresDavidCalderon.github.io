@@ -53,6 +53,7 @@
         position: absolute;
         height: v-bind(titleHeight);
         top: 0%;
+        margin:0;
     }
     .game_image{
     position: relative;
@@ -86,7 +87,7 @@
         font-family: "Jersey 15", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 18vw;
+        font-size: min(18vw,120px);
         -webkit-text-stroke: 0.5px black;
         z-index:2;
     }
@@ -103,11 +104,12 @@
 
     @media (min-aspect-ratio: 1/1){
         .game_image{
-            width: 100%;
+            width: 40vw;
         }
 
         .game_container{
-            flex: 2;
+            height:100%;
+            flex:0;
         }
     }
 </style>    

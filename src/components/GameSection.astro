@@ -61,16 +61,17 @@ import GetItOnPlay from "./GetItOnPlay.vue";
         align-items: center;
         gap: 1rem;
         width: 100vw;
+        margin:0;
     }
 
     @media (min-aspect-ratio: 1/1){
         .game_and_buttons_container{
             flex-direction: row;
             align-items: flex-start;
+            justify-content: space-between;
         }
         .project_interaction_container{
-            flex:1;
-            align-items: flex-start;
+            align-items: flex-end;
             flex-direction: column;
         }
     }

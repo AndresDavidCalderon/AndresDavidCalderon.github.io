@@ -1,0 +1,11 @@
+*{
+    --item-font-size:min(10vw,30px)
+}
+
+.top_description, .landscape_description{
+    font-size: var(--item-font-size);
+}
+
+button{
+    font-size: var(--item-font-size);
+}

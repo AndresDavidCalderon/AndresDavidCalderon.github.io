@@ -26,5 +26,12 @@
         background-color: white;
     }
 
+    @media (min-aspect-ratio: 1/1){
+        .game_window{
+            width: 40vw;
+            height:max(30vh,20vw);
+        }
+    }   
+
 
 </style>

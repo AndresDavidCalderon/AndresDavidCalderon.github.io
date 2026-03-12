@@ -26,37 +26,47 @@
         <div class="accent_glow"></div>
       </h1>
     </div>
-    <p>{{ description }}</p>
-    <div v-if="!running" class="image_container">
-        <img
-        :src="images[0]"
-        :alt="title"
-        :style="{ width: image_width}"
-        />
-    </div>
-    <div v-else class="run_cointainer">
-      <in-page-player :play-u-r-l="run_url" :button-class="button_class" :height="iframe_height" :width="iframe_width">
-      </in-page-player>
-    </div>
-    <div class="image_selector_container">
-      <div
-        class="image_selector"
-        v-for="(img, idx) in images"
-        :key="idx"
-      />
-    </div>
+    <p class="top_description">{{ description }}</p>
+    <div class="responsive_project_container">
+      <div class="big_element_container">
+        <div v-if="!running" class="image_container">
+            <img
+            :src="images[0]"
+            :alt="title"
+            :style="{ width: image_width}"
+            />
+        </div>
+        <div v-else class="run_cointainer">
+          <in-page-player :play-u-r-l="run_url" :button-class="button_class" :height="iframe_height" :width="iframe_width">
+          </in-page-player>
+        </div>
+        <div class="image_selector_container">
+          <div
+            class="image_selector"
+            v-for="(img, idx) in images"
+            :key="idx"
+          />
+        </div>
+      </div>
 
-		<div class="project_interaction_container">
-			<InPagePlay v-if="button_class!='' && run_url" :custom_class="button_class" @click="running=true;"/>
-      <slot />
+      <div class="project_interaction_container">
+        <p class="landscape_description">{{description}}</p>
+        <InPagePlay v-if="button_class!='' && run_url" :custom_class="button_class" @click="running=true;"/>
+        <slot />
+      </div>
     </div>
   </div>
 </template>
-
+<style src="../styles/general.css"/>
 
 <style scoped>
 div{
     margin:0
+}
+
+
+.landscape_description{
+  display: none;
 }
 .project_title_container {
     width: 100vw;
@@ -106,5 +116,38 @@ p {
 img {
     width: 100vw;
     margin:0;
+}
+
+@media (min-aspect-ratio: 1/1){
+    .responsive_project_container{
+        display:flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .top_description{
+      display:none;
+    }
+
+    .landscape_description{
+      width:100%;
+      display: block;
+      padding:10px;
+      box-sizing: border-box;
+    }
+
+    .project_interaction_container{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex:1;
+        max-width: 40vw;
+    }
+
+    .big_element_container{
+      flex:2;
+    }
+
 }
 </style>
