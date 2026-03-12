@@ -2,7 +2,7 @@
     let props = defineProps({
         playURL: String,
         buttonClass: String,
-        width: {type: String, default: '100vw'},
+        width: {type: String, default: '100%'},
         height: {type: String, default: '50vw'}
     });
     const fullscreen=()=>{

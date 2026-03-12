@@ -2,40 +2,43 @@
 import Game from "../components/Game.vue";
 import GetItOnPlay from "./GetItOnPlay.vue";
 ---
-<Game
-    image="/showcase_images/cat_on_a_ball_bearing_car.png"
-    accent="#fff300ff"
-    playURL="/web_apps/cat_on_a_ball_bearing_car/index.html"
-    titleURL="/showcase_images/cat_on_a_ball_bearing_car_title.png"
-    focusedImage="/showcase_images/play_cat_on_car.gif"
-    titleHeight="30%"
-    buttonClass="cat_ball_button"
-    client:load
-/>
+<div class="game_and_buttons_container">        
+    <Game
+        image="/showcase_images/cat_on_a_ball_bearing_car.png"
+        accent="#fff300ff"
+        playURL="/web_apps/cat_on_a_ball_bearing_car/index.html"
+        titleURL="/showcase_images/cat_on_a_ball_bearing_car_title.png"
+        focusedImage="/showcase_images/play_cat_on_car.gif"
+        titleHeight="30%"
+        buttonClass="cat_ball_button"
+        client:load
+    />
 
-<div class="project_interaction_container">
-    <button
-        class="cat_ball_button main_button interaction_button text.contents.jam"
-        id="cat_shiba_button"
-        >See game jam page</button
-    >
-    <button class="cat_ball_button interaction_button text.contents.source"
-    id="cat_source_button"
-        >See source</button
-    >
+    <div class="project_interaction_container">
+        <button
+            class="cat_ball_button main_button interaction_button text.contents.jam"
+            id="cat_shiba_button"
+            >See game jam page</button
+        >
+        <button class="cat_ball_button interaction_button text.contents.source"
+        id="cat_source_button"
+            >See source</button
+        >
+    </div>
 </div>
-<Game
-    image="/showcase_images/ignis_cave.png"
-    client:load	
-    playURL="/web_apps/ignis/index.html"
-    titleURL="/showcase_images/ignis_logo.png"
-    buttonClass="ignis_button"
-    accent="#0663f0ff"
-/>
-<div class="project_interaction_container">
-    <GetItOnPlay url="https://play.google.com/store/apps/details?id=org.andresdavidcalderon.ignis&hl=en" />
+<div class="game_and_buttons_container">
+    <Game
+        image="/showcase_images/ignis_cave.png"
+        client:load	
+        playURL="/web_apps/ignis/index.html"
+        titleURL="/showcase_images/ignis_logo.png"
+        buttonClass="ignis_button"
+        accent="#0663f0ff"
+    />
+    <div class="project_interaction_container">
+        <GetItOnPlay url="https://play.google.com/store/apps/details?id=org.andresdavidcalderon.ignis&hl=en" />
+    </div>
 </div>
-
 <script>
 	document.getElementById("cat_shiba_button")!.onclick = function () {
 		window.open(
@@ -51,3 +54,24 @@ import GetItOnPlay from "./GetItOnPlay.vue";
 	};
 </script>
 <script src="../translator.js"></script>
+<style scoped>  
+    .game_and_buttons_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100vw;
+    }
+
+    @media (min-aspect-ratio: 1/1){
+        .game_and_buttons_container{
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .project_interaction_container{
+            flex:1;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+</style>

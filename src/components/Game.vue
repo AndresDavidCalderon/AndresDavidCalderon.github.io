@@ -79,6 +79,7 @@
     .game_container{
     position: relative;
     margin:0;
+    width: 100%;
     }
 
     .play_text{
@@ -98,5 +99,15 @@
     height: 20%;
     left: -105%;
     z-index:1;
+    }
+
+    @media (min-aspect-ratio: 1/1){
+        .game_image{
+            width: 100%;
+        }
+
+        .game_container{
+            flex: 2;
+        }
     }
 </style>    
