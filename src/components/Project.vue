@@ -67,6 +67,7 @@ div{
 
 .landscape_description{
   display: none;
+  margin:0;
 }
 .project_title_container {
     width: 100vw;

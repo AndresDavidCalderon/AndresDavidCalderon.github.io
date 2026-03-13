@@ -1,0 +1,36 @@
+---
+
+---
+<a id="whatsapp-link" href="https://wa.me/573155193851?text=hola">
+    <div class="whatsapp_bubble">
+        <img src="/icons/whatsapp_glyph_white.png">
+    </div>
+</a>
+<style scoped>
+    .whatsapp_bubble{
+        position: fixed;
+        --size: min(10vw,2cm);
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        bottom:10px;
+        right:10px;
+        background-color: #103928;
+        z-index:6;
+    }
+    img{
+        position: absolute;
+        --size: 70%;
+        width: var(--size);
+        top: calc((100% - var(--size)) / 2);
+        left: calc((100% - var(--size)) / 2);
+        height: auto;
+        margin:0;
+        
+    }
+</style>
+<script>
+    import { getUI } from "../language";
+    (document.getElementById("whatsapp-link")! as HTMLAnchorElement).href = getUI("links.whatsapp");
+</script>
+---

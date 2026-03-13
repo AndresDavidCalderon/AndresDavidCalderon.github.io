@@ -4,6 +4,10 @@
 
 <h1 class='text.contact.title'>Get in touch</h1>
 
+<button id="whatsapp" class="footer_contact_button" style="background-color:#25d366">
+    <img class="contact_icon" src="/icons/whatsapp_glyph_white.png"/>
+    <p class="text.contact.whatsapp">Chat on WhatsApp</p>
+</button>
 <button class="footer_contact_button" id="send_mail">
     <span class="material-symbols-outlined">mail</span>
     <p class="text.contact.email">Send me an email</p>
@@ -33,11 +37,14 @@
 }
 
 .contact_icon{
-  width: 5vw;
-  height: auto;
+  height: min(5vw, 1cm);
 }
 </style>
 <script>
+    import { getUI } from "../language";
+    document.getElementById("whatsapp")!.onclick = function(){
+        window.open(getUI("links.whatsapp"), "_blank");
+    }
     document.getElementById("fiverr")!.onclick = function(){
         window.open("https://es.fiverr.com/s/Q7ok4P6", "_blank");
     }
