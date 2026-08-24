@@ -68,6 +68,7 @@ div{
 .landscape_description{
   display: none;
   margin:0;
+  font-size: calc(var(--item-font-size) * 1.5);
 }
 .project_title_container {
     width: 100vw;

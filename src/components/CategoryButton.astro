@@ -10,7 +10,6 @@ const {title,goto} = Astro.props
     </div>
     <div class="category_underline"></div>
 </a>
-
 <style>
     a{
         margin:0;
@@ -22,7 +21,11 @@ const {title,goto} = Astro.props
         color: #b5b5b5ff;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: var(--item-font-size)
+        font-size: var(--item-font-size);
+        margin:0;
+        padding-left:10px;
+        padding-right:10px;
+        box-sizing: border-box;
     }
     .category_underline{
         width: 100%;
