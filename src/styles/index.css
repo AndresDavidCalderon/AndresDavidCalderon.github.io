@@ -1,5 +1,12 @@
 :root {
   --main-accent-color: #89b4fa;
+  --tame-color: #4B638A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .material-symbols-outlined {
@@ -41,6 +48,7 @@ h1 {
   font-style: normal;
   color: var(--main-accent-color);
   font-size: min(8vw, 3cm);
+  text-align: center;
 }
 
 p,
@@ -188,4 +196,35 @@ button {
   background-color: #0663f0ff;
   color: white;
 
+}
+
+.work-entry{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items:stretch;
+  margin:0;
+  padding:10px;
+  box-sizing:border-box;
+}
+
+.work-entry-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  font-size: calc(var(--item-font-size) * 3);
+}
+
+.work-entry-info{
+  flex:1;
+}
+
+.work-separator{
+  height:2px;
+  background-color: var(--tame-color);
+}
+.work-date{
+  font-size: calc(var(--item-font-size) * 0.8);
 }
