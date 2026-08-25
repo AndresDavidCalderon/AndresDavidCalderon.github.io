@@ -1,5 +1,6 @@
 :root {
   --main-accent-color: #89b4fa;
+  --tame-color: #4B638A;
 }
 
 .material-symbols-outlined {
@@ -188,4 +189,30 @@ button {
   background-color: #0663f0ff;
   color: white;
 
+}
+
+.work-entry{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-basis:0;
+  align-items:stretch;
+}
+
+.work-entry-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  font-size: calc(var(--item-font-size) * 3);
+}
+
+.work-entry-info{
+  flex:1;
+}
+
+.work-separator{
+  height:2px;
+  background-color: var(--tame-color);
 }
