@@ -3,6 +3,12 @@
   --tame-color: #4B638A;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     "FILL" 1,
@@ -42,6 +48,7 @@ h1 {
   font-style: normal;
   color: var(--main-accent-color);
   font-size: min(8vw, 3cm);
+  text-align: center;
 }
 
 p,
@@ -195,8 +202,10 @@ button {
   position: relative;
   display: flex;
   flex-direction: row;
-  flex-basis:0;
   align-items:stretch;
+  margin:0;
+  padding:10px;
+  box-sizing:border-box;
 }
 
 .work-entry-title{
@@ -215,4 +224,7 @@ button {
 .work-separator{
   height:2px;
   background-color: var(--tame-color);
+}
+.work-date{
+  font-size: calc(var(--item-font-size) * 0.8);
 }
