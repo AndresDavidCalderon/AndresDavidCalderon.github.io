@@ -42,7 +42,7 @@ import WhatsappBubble from "@components/WhatsappBubble.astro";
 		<div class="main_flex">
 			<div>
 				<p style="text-align: left;" class="top_name text.top.name">I'm David</p>
-				<h1 class="text.top.profession">Web & game developer</h1>
+				<h1 class="text.top.profession">Full stack developer</h1>
 			</div>
 			<div class="rating_container">
 				{Array(5).fill(<img class="star" src="/icons/star.svg" />)}
@@ -69,25 +69,25 @@ import WhatsappBubble from "@components/WhatsappBubble.astro";
 				</div>
 			</div>
 			<img src="/teaching.png" class="concept_image" />
-			<h1>Work experience</h1>
+			<h1 class="text.work">Work experience</h1>
 			<section id="work">
 				<div class="work-entry">
 					<div class="work-entry-title">
 						<h2>Outlier AI</h2>
 					</div>
 					<div class="work-entry-info">
-						<h3>LATAM coder</h3>
-						<span class="work-date">Until august 2026</span>
+						<h3 class="text.work.outlier.role">LATAM coder</h3>
+						<span class="work-date text.work.outlier.date">Until august 2026</span>
 						<p>
 							<ul>
-								<li>
+								<li class="text.work.outlier.description1">
 									Created training data for clients to align AI models, with the objective of
 									enhancing their ability to create high quality content and code.
 								</li>
-								<li>
+								<li class="text.work.outlier.description2">
 									Evaluated AI output for code cleanliness, functionality and adherence to prompt.
 								</li>
-								<li>
+								<li class="text.work.outlier.description3">
 									Corrected AI output to meet specifications and quality expectations.
 								</li>
 							</ul>
@@ -100,25 +100,25 @@ import WhatsappBubble from "@components/WhatsappBubble.astro";
 						<h2>Fiverr</h2>
 					</div>
 					<div class="work-entry-info">
-						<h3>Freelancer</h3>
-						<span class="work-date">January 2022 to July 2024 and august 2026 to present</span>
+						<h3 class="text.work.fiverr.role">Freelancer</h3>
+						<span class="work-date text.work.fiverr.date">January 2022 to July 2024 and august 2026 to present</span>
 						<p>
 							<ul>
-								<li>
+								<li class="text.work.fiverr.description1">
 									Bug fixing for existing projects.
 								</li>
-								<li>
+								<li class="text.work.fiverr.description2">
 									Prototyping from game rules.
 								</li>
-								<li>
+								<li class="text.work.fiverr.description3">
 									Creation of games from zero using given requirements by clients
 								</li>
-								<li>
+								<li class="text.work.fiverr.description4">
 									Creation of thorough documentation for clients to pick up the project and continue development.
 								</li>
 							</ul>
 						</p>
-						Achieved a 5 start rating with greatly positive feedback from clients and more than 20 completed orders.
+						<p class="text.work.fiverr.summary job-summary">Achieved a 5 star rating with greatly positive feedback from clients and more than 20 completed orders.</p>
 					</div>
 				</div>
 			</div>
