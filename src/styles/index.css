@@ -228,8 +228,3 @@ button {
 .work-date{
   font-size: calc(var(--item-font-size) * 0.8);
 }
-
-.job-summary{
-  font-size: calc(var(--item-font-size));
-  text-align: left;
-}
